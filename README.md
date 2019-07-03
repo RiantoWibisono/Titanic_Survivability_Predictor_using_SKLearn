@@ -7,13 +7,13 @@ ML method used is logistic regression provided by SK-Learn with the help of one-
 1. Clone this repo and *run* the program. 
 
 2. Go to http://localhost:1234/ in your browser. A screenshot of how the main page will look like:
-    ![homePage](./ss1.png)
+    ![homePage](./ss4.png)
     Fill all the data required.
 
 3. Submit! See if you would have survived...
-    ![resultPage](./ss2.png)
+    ![resultPage](./ss5.png)
     or else...
-    ![resultPage](./ss3.png)
+    ![resultPage](./ss6.png)
 
 
 
