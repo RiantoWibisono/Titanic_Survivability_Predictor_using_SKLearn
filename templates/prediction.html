@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Titanic Survivability Predictor</title>
+    <style>
+        body {
+            background-image: url("https://www.barraques.cat/pngfile/big/24-241789_hd-wallpaper-titanic-hd.jpg");
+            background-size: 1300px 620px
+            }
+        div.form {
+            display: block;
+            text-align: center;
+            }
+        form {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            }
+    </style>
+</head>
+<body style="margin: 30px">
+    <h1 style="color:white; text-align:center">Would you have survived in Titanic?</h1><br>
+    <div class="form">
+        <form action="http://localhost:1234/result" method="POST"
+        style="background-color: white; width:500px; padding: 20px 0px; 
+        border: 5px solid whitesmoke; text-align:center; opacity:0.9">
+            Sex:
+            <select name="sex">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+                <option selected hidden></option>
+            </select>
+    
+            <br><br>
+            Class:
+            <select name="pclass">
+                <option value="1">1st Class</option>
+                <option value="2">2nd Class</option>
+                <option value="3">3rd Class</option>
+                <option selected hidden></option>
+            </select>
+    
+            <br><br>
+            Age:
+            <input name="age" placeholder="Insert age.." type="number"
+            min="0" max="100" style="width:100px"/>
+            
+            <br><br>
+            No of sibling(s) aboard:
+            <input name="sibsp" placeholder="Insert amount.." type="number"
+            min="0" max="100" style="width:150px"/>
+    
+            <br><br>
+            No of parents/childs aboard:
+            <input name="parch" placeholder="Insert amount.." type="number"
+            min="0" max="100" style="width:150px"/>
+    
+            <br><br>
+            Fare:
+            <input name="fare" placeholder="Insert fare.." type="number"
+            min="0" style="width:150px"/>
+    
+            <br><br>
+            <input type="submit" value="PREDICT"/>
+        </form>
+    </div>
+    
+</body>
+</html>

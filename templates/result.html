@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Your Prediction...</title>
+    <style>
+        body {
+            background-image: url("http://getwallpapers.com/wallpaper/full/8/7/8/824051-amazing-titanic-wallpaper-1920x1080-for-hd.jpg");
+            background-size: 1300px 620px
+            }
+        div.table {
+            display: block;
+            text-align: center;
+            }
+        table {
+            display: inline-block;
+            margin-left: auto;
+            margin-right: auto;
+            }
+    </style>
+</head>
+<body style="text-align: center">
+    <h1 style="color: white">Your survivability prediction...</h1><br>
+    <div class="table">
+        <table style="text-align: center; background-color:lightskyblue; padding: 20px 0px; text-align: center">
+            <tr>
+                <td style="font-size: 20px; width: 150px">Female: {{ result.female }}</td>
+                <td style="font-size: 20px; width: 150px">Male: {{ result.male }}</td>
+                <td style="font-size: 20px; width: 150px">Child: {{ result.child }}</td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px; width: 150px">Man: {{ result.man }}</td>
+                <td style="font-size: 20px; width: 150px">Woman: {{ result.woman }}</td>
+                <td style="font-size: 20px; width: 150px">Class: {{ result.pclass }}</td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px; width: 150px">Age: {{ result.age }}</td>
+                <td style="font-size: 20px; width: 150px">Siblings: {{ result.sibsp }}</td>
+                <td style="font-size: 20px; width: 150px">Parents: {{ result.parch}}</td>
+            </tr>
+            <tr>
+                <td style="font-size: 20px; width: 150px">Fare: {{ result.fare }}</td>
+                <td style="font-size: 20px; width: 150px">Adult Man: {{ result.adultman }}</td>
+                <td style="font-size: 20px; width: 150px">Alone: {{ result.alone }}</td>
+            </tr>
+        </table>
+    </div>
+    
+    <h2 style="font-size: 50px; color:red; font-weight: 1000; background-color:yellow; opacity: 0.8;">PREDICTION: {{ result.answer }}</h2>
+</body>
+</html>
