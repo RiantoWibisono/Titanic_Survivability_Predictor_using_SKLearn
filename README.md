@@ -1,6 +1,6 @@
 ![purwadhikaLogo](https://d1ah56qj523gwb.cloudfront.net/uploads/organizations/logos/1538557444-kcgv11HXelvcOnlyrGcEpfwAf6hbPMhC.png)
 
-# Titanic Survivability Predictor using Sci-kit Learn (Logistic Regression)
+# Titanic Survivability Predictor using Sci-kit Learn Machine Learning (Logistic Regression)
 A simple application based on Flask framework to predict whether you'd have survived or not in the prominent Titanic accident. The data used for machine learning training was obtained from seaborn data set, or you can click [*here*](https://github.com/mwaskom/seaborn-data/blob/master/titanic.csv).
 
 ML method used is logistic regression provided by SK-Learn with the help of one-hot-encoder feature which used to transform string filled columns.
